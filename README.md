@@ -1,23 +1,27 @@
-# C, printf
+
+<!-- this line bellow stops the C, printf line being included in the table of contents -->
+<!-- omit in toc -->  
+## C, printf
 
 ```
 replace with proper badges later
 ```
-##
-
-Contents:
-
-- [Description](#Project-Description)
-
-- [Resources](#Resources)
-
-- [Requirements](#Requirements)
-
-- [Compilation](#Compilation)
 
 
-#Project Description
+## Contents
 
-#Resources
 
-#Requirements
+
+- [Contents](#contents)
+- [Project Description](#project-description)
+- [Resources](#resources)
+- [Requirements](#requirements)
+- [Compilation](#compilation)
+
+## Project Description
+
+## Resources
+
+## Requirements
+
+## Compilation
