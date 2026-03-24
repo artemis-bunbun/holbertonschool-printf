@@ -56,7 +56,10 @@ _printf("Number: %d\n", 42);
 .BR va_start (3)
 
 .SH AUTHORS
-Written by the _printf project authors,
+Written by the _printf project authors:
+.br
 Thomas CHARIER LERAY
+.br
 Alexander DURANT
+.br
 Madi MADI ANLI
