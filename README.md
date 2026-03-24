@@ -1,4 +1,5 @@
 
+
 <!-- this line bellow stops the C, printf line being included in the table of contents -->
 <!-- omit in toc -->  
 # C, printf
@@ -26,3 +27,4 @@ It accepts a format c string argument and a variable number of args that the pri
 ## Requirements
 
 ## Compilation
+
