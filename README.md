@@ -48,6 +48,3 @@ Don't forget to push your header file
 All your header files should be include guarded
 
 ## Compilation
-```
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
-```
