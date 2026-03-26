@@ -1,4 +1,5 @@
 
+
 <!-- this line bellow stops the C, printf line being included in the table of contents -->
 <!-- omit in toc -->  
 # C, printf
@@ -48,3 +49,5 @@ Don't forget to push your header file
 All your header files should be include guarded
 
 ## Compilation
+## Compilation
+
