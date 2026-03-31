@@ -1,12 +1,11 @@
 
-
 <!-- this line bellow stops the C, printf line being included in the table of contents -->
 <!-- omit in toc -->  
 # C, printf
 
-```
-replace with proper badges later
-```
+![GCC v15.2](https://img.shields.io/badge/GCC-v15.2-blue)
+![ubuntu 20.04](https://img.shields.io/badge/ubuntu-20.04-orange)
+![Betty](https://img.shields.io/badge/Style-Betty-yellow)
 
 ## Contents
 
@@ -44,7 +43,7 @@ Read or watch:
 man or help:
 
     printf (3)
-
+  
 ## Requirements
 
 	- Allowed editors: vi, vim, emacs
@@ -74,8 +73,15 @@ man or help:
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 ```
 ## Running the program:
-Have everything listed here installed on your system:
+- Have everything listed here installed on your system:
 
-[System Requirements](#system-requirements)
+	[System Requirements](#system-requirements)
+
+- Run the compilation command found here:
+
+	[Compilation](#compilation)
+- Execute the program with:
+
+	```./ipsum```
 
 ## 
