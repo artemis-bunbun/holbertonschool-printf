@@ -13,12 +13,10 @@
 int _printf(const char *format, ...);
 
 /* Affiche un caractère */
-int ft_putchar(char c);
+int _putchar(char c);
 
 /* Affiche une chaîne de caractères */
-int ft_putstr(char *str);
+int _putstr(char *str);
 
-/* Gère les spécificateurs (%c, %s, etc.) */
-int handle_specifier(char spec, va_list args);
 
 #endif /* MAIN_H */
