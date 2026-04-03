@@ -19,7 +19,6 @@ int _printf(const char *format, ...);
 int print_char(va_list args);
 
 #endif /* MAIN_H */	
-=======
 #ifndef MAIN_H          /* Si MAIN_H n'est pas encore défini */
 #define MAIN_H          /* Définit MAIN_H */
 
