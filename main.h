@@ -3,8 +3,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include <unistd.h>
 
-int _printf(const char *format, ...);
 
-#endif /* MAIN_H */
+typedef struct choice 
+{
+	int choice;
+	int (*func)(va_list args);
+
+} Specifier;
+
+int _printf(const char *format, ...);
+int print_char(va_list args);
+
+#endif /* MAIN_H */	
