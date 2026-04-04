@@ -74,7 +74,6 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 ```
 ## Running the program:
 - Have everything listed here installed on your system:
-
 	[System Requirements](#system-requirements)
 
 - Run the compilation command found here:
@@ -83,5 +82,3 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 - Execute the program with:
 
 	```./ipsum```
-
-## 
