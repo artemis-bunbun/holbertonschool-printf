@@ -18,7 +18,7 @@
 - [Requirements](#requirements)
 - [Compilation](#compilation)
 - [Running the program:](#running-the-program)
-- [](#)
+- [Usage example](#usage-example)
 
 ## Project Description
 This is the printf project. We have been tasked to make our own printf function, printf is a standard library function in C that formats text and writes it to standard output (i.e, a terminal).
@@ -79,6 +79,25 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 - Run the compilation command found here:
 
 	[Compilation](#compilation)
-- Execute the program with:
 
-	```./ipsum```
+
+## Usage example
+
+
+Example: Character, string, and percent
+
+```c
+#include "main.h"
+
+int main(void)
+{
+	_printf("Student: %s | Grade: %c | Progress: 10%%\n", "Xander", 'A');
+	return (0);
+}
+```
+
+Output:
+
+```text
+Student: Xander | Grade: A | Progress: 10%
+```
