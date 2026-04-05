@@ -2,10 +2,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-#include <unistd.h>
+/* Includes nécessaires */
+#include <stdio.h>      /* pour printf et write */
+#include <stdlib.h>     /* pour malloc, free */
+#include <stdarg.h>     /* pour va_list */
+#include <unistd.h>     /* pour write */
+
 
 
 typedef struct choice 
@@ -14,20 +16,6 @@ typedef struct choice
 	int (*func)(va_list args);
 
 } Specifier;
-
-int _printf(const char *format, ...);
-int print_char(va_list args);
-
-#endif /* MAIN_H */	
-=======
-#ifndef MAIN_H          /* Si MAIN_H n'est pas encore défini */
-#define MAIN_H          /* Définit MAIN_H */
-
-/* Includes nécessaires */
-#include <stdio.h>      /* pour printf et write */
-#include <stdlib.h>     /* pour malloc, free */
-#include <stdarg.h>     /* pour va_list */
-#include <unistd.h>     /* pour write */
 
 /* Prototypes de fonctions personnalisées */
 
@@ -40,6 +28,8 @@ int _putchar(char c);
 /* Affiche une chaîne de caractères */
 int _putstr(char *str);
 
+int _printf(const char *format, ...);
+int print_char(va_list args);
 
-#endif /* MAIN_H */
+#endif /* MAIN_H */	
 
