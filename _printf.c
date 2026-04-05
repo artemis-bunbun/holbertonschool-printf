@@ -1,20 +1,56 @@
 #include "main.h"
 
+/**
+ * _printf - prints formatted output
+ * @format: format string
+ *
+ * Return: number of characters printed
+ */
 int _printf(const char *format, ...)
 {
-	int index;
-	int numchar = 0;
-	char c;
+	va_list args;
+	int i = 0, j, count = 0;
+	Specifier speci_array[] = {
+		{'c', print_char},
+		{'s', print_str},
+		{'%', print_percent},
+		{'\0', NULL}
+	};
 
-	if(format == NULL)
+	if (format == NULL)
+		return (-1);
+
+	va_start(args, format);
+
+	while (format[i] != '\0')
 	{
-		return(-1);
+		if (format[i] == '%')
+		{
+			i++;
+
+			if (format[i] == '\0')
+			{
+				va_end(args);
+				return (-1);
+			}
+
+			for (j = 0; speci_array[j].specifier != '\0'; j++)
+			{
+				if (format[i] == speci_array[j].specifier)
+				{
+					count += speci_array[j].func(args);
+					break;
+				}
+			}
+		}
+		else
+		{
+			write(1, &format[i], 1);
+			count++;
+		}
+		i++;
 	}
-	for(index = 0; format[index] != '\0'; index++)
-	{
-		c = format[index];
-		write(1, &c, 1);
-		numchar++;
-	}
-	return(numchar);
+
+	va_end(args);
+	return (count);
 }
