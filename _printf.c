@@ -34,6 +34,12 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 
+			if (format[i] == '%')
+			{
+				write(1, "%", 1);
+				count++;
+			}
+
 			for (j = 0; speci_array[j].choice != '\0'; j++)
 
 			{
