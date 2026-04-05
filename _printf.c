@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 	int i = 0, j, count = 0;
 	Specifier speci_array[] = {
 		{'c', print_char},
-		{'s', print_str},
+		{'%', print_percent},
+		/**{'s', print_str},*/
 		{'%', print_percent},
 		{'\0', NULL}
 	};
