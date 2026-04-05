@@ -34,9 +34,9 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 
-			for (j = 0; speci_array[j].specifier != '\0'; j++)
+			for (j = 0; speci_array[j].choice	!= '\0'; j++)
 			{
-				if (format[i] == speci_array[j].specifier)
+				if (format[i] == speci_array[j].choice)
 				{
 					count += speci_array[j].func(args);
 					break;
@@ -54,3 +54,5 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
+
+

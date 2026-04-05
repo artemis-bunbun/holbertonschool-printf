@@ -1,15 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdarg.h>
 #include <unistd.h>
+#include <stdarg.h>
 /**
  * struct choice - links specifier to handler function
- * @specifier: the format character (c, s, %, d...)
+ * @choice: the format character (c, s, %, d...)
  * @func: pointer to the handler function
  */
 typedef struct choice
 {
-	char specifier;
+	int choice;
 	int (*func)(va_list args);
 } Specifier;
 int _printf(const char *format, ...);
