@@ -34,9 +34,6 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 
-
-			for (j = 0; speci_array[j].choice	!= '\0'; j++)
-
 			for (j = 0; speci_array[j].choice != '\0'; j++)
 
 			{
