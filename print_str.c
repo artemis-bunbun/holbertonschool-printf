@@ -28,3 +28,15 @@ for (; s[c] != '\0'; c++)
 write(1, &s[c], 1);
 return (c);
 }
+/**
+ 
+print_percent - prints a percent sign
+@args: va_list containing the percent sign to print
+Return: number of characters printed*/
+
+int print_percent(va_list args)
+{
+(void)args;
+write(1, "%", 1);
+return (1);
+}
