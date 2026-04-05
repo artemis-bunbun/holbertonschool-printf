@@ -30,4 +30,4 @@ int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_percent(va_list vargs);
 
-#endif /* MAIN_H */
+#endif /** MAIN_H */
