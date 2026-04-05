@@ -1,2 +1,6 @@
+madi
+a.out
+
 *.o
 test_printf
+main

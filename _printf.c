@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 	int i = 0, j, count = 0;
 	Specifier speci_array[] = {
 		{'c', print_char},
+		{'s', print_str},
 		{'%', print_percent},
 		{'\0', NULL}
 	};
@@ -33,7 +34,11 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 
+
+			for (j = 0; speci_array[j].choice	!= '\0'; j++)
+
 			for (j = 0; speci_array[j].choice != '\0'; j++)
+
 			{
 				if (format[i] == speci_array[j].choice)
 				{
@@ -53,3 +58,4 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
+
